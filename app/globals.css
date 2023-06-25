@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Scroll bar */
+.cust-sb::-webkit-scrollbar,html::-webkit-scrollbar
+{
+	margin-left: 30px;
+	float: left;
+	height: 300px;
+	width: 65px;
+	/* background: #F5F5F5; */
+	overflow-y: scroll;
+	margin-bottom: 25px;
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+
+
+.cust-sb::-webkit-scrollbar-track,html::-webkit-scrollbar-track
+{
+    position:sticky ;
+    position:-webkit-sticky ;
+    right:0;
+    height:100vh !important;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	/* background-color: #F5F5F5; */
+	border-radius: 10px;
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+.cust-sb::-webkit-scrollbar,html::-webkit-scrollbar
+{
+	width: 10px;
+	/* background-color: #F5F5F5; */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+.cust-sb::-webkit-scrollbar-thumb,html::-webkit-scrollbar-thumb
+{
+    background: rgba( 74, 144, 226, 0.65 );
+    border-radius: 10px;
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    /* background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+}
+
+
+
+
+.bg-deep-space{
+    background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.bg-lawrencium{
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+}
+
+.btn-lawrencium{
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+    transition: all 0.2s ease-in-out;
+   
+}
+.btn-lawrencium:hover{
+    background-image: radial-gradient(circle at bottom center, rgb(216, 248, 247),rgb(253, 176, 22));
+    color:black;
+}
+
+.bg-mos{
+    background: #780206;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #061161, #780206);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #061161, #780206); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.bg-royal{
+    background: #141E30;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.bg-ms{
+    background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+/*  gradientmagic.com */
+
+.bg-blue-pattern{
+    background-image: repeating-radial-gradient(circle at center center, rgb(3,69,150) 0px, rgb(3,69,150) 5px,transparent 5px, transparent 7px),linear-gradient(135deg, rgb(9,56,115) 0%,rgb(9,56,115) 39%); background-size: 33px 33px;
+}
+
+.bg-black-pattern{
+    background-image: radial-gradient(circle 62px at center center, hsla(149,19%,61%,0.15) 0%, hsla(149,19%,61%,0.15) 27%,transparent 27%, transparent 35%,transparent 35%, transparent 100%),linear-gradient(270deg, hsla(149,19%,61%,0.15) 0%, hsla(149,19%,61%,0.15) 8%,transparent 8%, transparent 100%),linear-gradient(0deg, hsla(149,19%,61%,0.15) 0%, hsla(149,19%,61%,0.15) 10%,transparent 10%, transparent 100%),linear-gradient(180deg, hsla(149,19%,61%,0.15) 0%, hsla(149,19%,61%,0.15) 10%,transparent 10%, transparent 100%),linear-gradient(90deg, hsla(149,19%,61%,0.15) 0%, hsla(149,19%,61%,0.15) 8%,transparent 8%, transparent 100%),linear-gradient(90deg, rgb(20,20,20),rgb(20,20,20)); background-size: 33px 33px;
+}
+
+.bg-blue-complex-pattern{
+    background-image: linear-gradient(45deg, rgba(41, 46, 85,0.2) 0%, rgba(41, 46, 85,0.2) 14.286%,rgba(8, 63, 48,0.2) 14.286%, rgba(8, 63, 48,0.2) 28.572%,rgba(91, 21, 141,0.2) 28.572%, rgba(91, 21, 141,0.2) 42.858%,rgba(58, 38, 104,0.2) 42.858%, rgba(58, 38, 104,0.2) 57.144%,rgba(25, 55, 67,0.2) 57.144%, rgba(25, 55, 67,0.2) 71.43%,rgba(108, 13, 159,0.2) 71.43%, rgba(108, 13, 159,0.2) 85.716%,rgba(75, 30, 122,0.2) 85.716%, rgba(75, 30, 122,0.2) 100.002%),linear-gradient(135deg, rgba(41, 46, 85,0.2) 0%, rgba(41, 46, 85,0.2) 14.286%,rgba(8, 63, 48,0.2) 14.286%, rgba(8, 63, 48,0.2) 28.572%,rgba(91, 21, 141,0.2) 28.572%, rgba(91, 21, 141,0.2) 42.858%,rgba(58, 38, 104,0.2) 42.858%, rgba(58, 38, 104,0.2) 57.144%,rgba(25, 55, 67,0.2) 57.144%, rgba(25, 55, 67,0.2) 71.43%,rgba(108, 13, 159,0.2) 71.43%, rgba(108, 13, 159,0.2) 85.716%,rgba(75, 30, 122,0.2) 85.716%, rgba(75, 30, 122,0.2) 100.002%),linear-gradient(0deg, rgba(41, 46, 85,0.2) 0%, rgba(41, 46, 85,0.2) 14.286%,rgba(8, 63, 48,0.2) 14.286%, rgba(8, 63, 48,0.2) 28.572%,rgba(91, 21, 141,0.2) 28.572%, rgba(91, 21, 141,0.2) 42.858%,rgba(58, 38, 104,0.2) 42.858%, rgba(58, 38, 104,0.2) 57.144%,rgba(25, 55, 67,0.2) 57.144%, rgba(25, 55, 67,0.2) 71.43%,rgba(108, 13, 159,0.2) 71.43%, rgba(108, 13, 159,0.2) 85.716%,rgba(75, 30, 122,0.2) 85.716%, rgba(75, 30, 122,0.2) 100.002%),linear-gradient(90deg, rgb(3, 20, 35),rgb(76, 9, 223));
+}
+
+.bg-yellow-angular-pattern{
+    background-image: linear-gradient(45deg, rgb(241, 121, 22) 0%, rgb(241, 121, 22) 12%,rgb(219, 114, 22) 12%, rgb(219, 114, 22) 29%,rgb(197, 107, 23) 29%, rgb(197, 107, 23) 30%,rgb(175, 100, 23) 30%, rgb(175, 100, 23) 33%,rgb(152, 94, 24) 33%, rgb(152, 94, 24) 51%,rgb(130, 87, 24) 51%, rgb(130, 87, 24) 77%,rgb(108, 80, 25) 77%, rgb(108, 80, 25) 95%,rgb(86, 73, 25) 95%, rgb(86, 73, 25) 100%),linear-gradient(135deg, rgb(241, 121, 22) 0%, rgb(241, 121, 22) 12%,rgb(219, 114, 22) 12%, rgb(219, 114, 22) 29%,rgb(197, 107, 23) 29%, rgb(197, 107, 23) 30%,rgb(175, 100, 23) 30%, rgb(175, 100, 23) 33%,rgb(152, 94, 24) 33%, rgb(152, 94, 24) 51%,rgb(130, 87, 24) 51%, rgb(130, 87, 24) 77%,rgb(108, 80, 25) 77%, rgb(108, 80, 25) 95%,rgb(86, 73, 25) 95%, rgb(86, 73, 25) 100%),linear-gradient(135deg, rgb(241, 121, 22) 0%, rgb(241, 121, 22) 12%,rgb(219, 114, 22) 12%, rgb(219, 114, 22) 29%,rgb(197, 107, 23) 29%, rgb(197, 107, 23) 30%,rgb(175, 100, 23) 30%, rgb(175, 100, 23) 33%,rgb(152, 94, 24) 33%, rgb(152, 94, 24) 51%,rgb(130, 87, 24) 51%, rgb(130, 87, 24) 77%,rgb(108, 80, 25) 77%, rgb(108, 80, 25) 95%,rgb(86, 73, 25) 95%, rgb(86, 73, 25) 100%),linear-gradient(90deg, rgb(199, 181, 128),rgb(162, 8, 93)); background-blend-mode:overlay,overlay,overlay,normal;
+}
+
+.bg-parallel-pattern{
+    background-image: repeating-linear-gradient(135deg, rgb(22, 32, 107) 0px, rgb(22, 32, 107) 2px,rgb(27, 40, 181) 2px, rgb(27, 40, 181) 4px,rgb(43, 56, 142) 4px, rgb(43, 56, 142) 6px,rgb(60, 66, 108) 6px, rgb(60, 66, 108) 8px,rgb(28, 38, 109) 8px, rgb(28, 38, 109) 10px,rgb(75, 95, 167) 10px, rgb(75, 95, 167) 12px,rgb(48, 75, 176) 12px, rgb(48, 75, 176) 14px,rgb(92, 107, 206) 14px, rgb(92, 107, 206) 16px,rgb(43, 65, 189) 16px, rgb(43, 65, 189) 18px,rgb(63, 67, 142) 18px, rgb(63, 67, 142) 20px,rgb(111, 123, 214) 20px, rgb(111, 123, 214) 22px,rgb(40, 65, 176) 22px, rgb(40, 65, 176) 24px,rgb(35, 47, 103) 24px, rgb(35, 47, 103) 26px,rgb(46, 61, 190) 26px, rgb(46, 61, 190) 28px,rgb(87, 91, 161) 28px, rgb(87, 91, 161) 30px,rgb(41, 65, 173) 30px, rgb(41, 65, 173) 32px,rgb(49, 58, 116) 32px, rgb(49, 58, 116) 34px,rgb(28, 57, 163) 34px, rgb(28, 57, 163) 36px,rgb(48, 59, 162) 36px, rgb(48, 59, 162) 38px,rgb(30, 37, 134) 38px, rgb(30, 37, 134) 40px,rgb(36, 47, 171) 40px, rgb(36, 47, 171) 42px,rgb(62, 74, 119) 42px, rgb(62, 74, 119) 44px,rgb(50, 80, 198) 44px, rgb(50, 80, 198) 46px,rgb(121, 133, 213) 46px, rgb(121, 133, 213) 48px,rgb(19, 40, 125) 48px, rgb(19, 40, 125) 50px,rgb(71, 77, 186) 50px, rgb(71, 77, 186) 52px,rgb(68, 76, 160) 52px, rgb(68, 76, 160) 54px,rgb(46, 56, 116) 54px, rgb(46, 56, 116) 56px,rgb(92, 114, 193) 56px, rgb(92, 114, 193) 58px,rgb(47, 58, 104) 58px, rgb(47, 58, 104) 60px,rgb(91, 95, 163) 60px, rgb(91, 95, 163) 62px,rgb(35, 50, 187) 62px, rgb(35, 50, 187) 64px,rgb(37, 53, 126) 64px, rgb(37, 53, 126) 66px,rgb(99, 111, 185) 66px, rgb(99, 111, 185) 68px,rgb(100, 108, 190) 68px, rgb(100, 108, 190) 70px,rgb(32, 50, 131) 70px, rgb(32, 50, 131) 72px,rgb(106, 127, 210) 72px, rgb(106, 127, 210) 74px,rgb(45, 70, 173) 74px, rgb(45, 70, 173) 76px,rgb(35, 58, 186) 76px, rgb(35, 58, 186) 78px,rgb(39, 64, 175) 78px, rgb(39, 64, 175) 80px,rgb(54, 60, 160) 80px, rgb(54, 60, 160) 82px,rgb(36, 46, 146) 82px, rgb(36, 46, 146) 84px,rgb(60, 65, 162) 84px, rgb(60, 65, 162) 86px,rgb(42, 54, 161) 86px, rgb(42, 54, 161) 88px,rgb(30, 42, 137) 88px, rgb(30, 42, 137) 90px,rgb(56, 79, 173) 90px, rgb(56, 79, 173) 92px,rgb(21, 39, 105) 92px, rgb(21, 39, 105) 94px,rgb(59, 67, 107) 94px, rgb(59, 67, 107) 96px,rgb(64, 69, 116) 96px, rgb(64, 69, 116) 98px,rgb(31, 56, 180) 98px, rgb(31, 56, 180) 100px,rgb(48, 77, 193) 100px, rgb(48, 77, 193) 102px,rgb(41, 55, 119) 102px, rgb(41, 55, 119) 104px,rgb(89, 103, 154) 104px, rgb(89, 103, 154) 106px,rgb(37, 51, 114) 106px, rgb(37, 51, 114) 108px,rgb(40, 54, 145) 108px, rgb(40, 54, 145) 110px,rgb(53, 66, 166) 110px, rgb(53, 66, 166) 112px,rgb(28, 35, 133) 112px, rgb(28, 35, 133) 114px,rgb(65, 83, 203) 114px, rgb(65, 83, 203) 116px,rgb(79, 93, 142) 116px, rgb(79, 93, 142) 118px,rgb(76, 80, 133) 118px, rgb(76, 80, 133) 120px,rgb(44, 53, 118) 120px, rgb(44, 53, 118) 122px,rgb(51, 64, 122) 122px, rgb(51, 64, 122) 124px,rgb(85, 97, 179) 124px, rgb(85, 97, 179) 126px,rgb(43, 49, 107) 126px, rgb(43, 49, 107) 128px,rgb(73, 90, 184) 128px, rgb(73, 90, 184) 130px,rgb(38, 70, 199) 130px, rgb(38, 70, 199) 132px,rgb(67, 86, 163) 132px, rgb(67, 86, 163) 134px,rgb(46, 68, 155) 134px, rgb(46, 68, 155) 136px,rgb(70, 86, 192) 136px, rgb(70, 86, 192) 138px,rgb(41, 47, 107) 138px, rgb(41, 47, 107) 140px,rgb(24, 32, 146) 140px, rgb(24, 32, 146) 142px,rgb(54, 79, 206) 142px, rgb(54, 79, 206) 144px,rgb(60, 73, 176) 144px, rgb(60, 73, 176) 146px,rgb(49, 64, 150) 146px, rgb(49, 64, 150) 148px,rgb(89, 94, 206) 148px, rgb(89, 94, 206) 150px,rgb(61, 67, 120) 150px, rgb(61, 67, 120) 152px,rgb(71, 80, 147) 152px, rgb(71, 80, 147) 154px,rgb(47, 57, 113) 154px, rgb(47, 57, 113) 156px,rgb(45, 54, 108) 156px, rgb(45, 54, 108) 158px,rgb(56, 67, 150) 158px, rgb(56, 67, 150) 160px,rgb(117, 123, 201) 160px, rgb(117, 123, 201) 162px,rgb(16, 27, 103) 162px, rgb(16, 27, 103) 164px,rgb(84, 99, 166) 164px, rgb(84, 99, 166) 166px,rgb(48, 51, 108) 166px, rgb(48, 51, 108) 168px,rgb(90, 99, 158) 168px, rgb(90, 99, 158) 170px,rgb(40, 54, 184) 170px, rgb(40, 54, 184) 172px,rgb(45, 60, 157) 172px, rgb(45, 60, 157) 174px,rgb(34, 47, 162) 174px, rgb(34, 47, 162) 176px,rgb(49, 72, 202) 176px, rgb(49, 72, 202) 178px,rgb(24, 35, 102) 178px, rgb(24, 35, 102) 180px,rgb(61, 78, 153) 180px, rgb(61, 78, 153) 182px,rgb(69, 83, 163) 182px, rgb(69, 83, 163) 184px,rgb(37, 45, 120) 184px, rgb(37, 45, 120) 186px,rgb(48, 61, 162) 186px, rgb(48, 61, 162) 188px,rgb(45, 53, 114) 188px, rgb(45, 53, 114) 190px,rgb(38, 47, 145) 190px, rgb(38, 47, 145) 192px,rgb(52, 76, 165) 192px, rgb(52, 76, 165) 194px,rgb(39, 55, 134) 194px, rgb(39, 55, 134) 196px,rgb(89, 97, 179) 196px, rgb(89, 97, 179) 198px,rgb(56, 67, 186) 198px, rgb(56, 67, 186) 200px,rgb(42, 57, 124) 200px, rgb(42, 57, 124) 202px,rgb(45, 50, 146) 202px, rgb(45, 50, 146) 204px,rgb(26, 32, 104) 204px, rgb(26, 32, 104) 206px,rgb(125, 136, 210) 206px, rgb(125, 136, 210) 208px,rgb(104, 118, 184) 208px, rgb(104, 118, 184) 210px,rgb(33, 48, 120) 210px, rgb(33, 48, 120) 212px,rgb(41, 54, 175) 212px, rgb(41, 54, 175) 214px,rgb(45, 48, 106) 214px, rgb(45, 48, 106) 216px,rgb(63, 70, 111) 216px, rgb(63, 70, 111) 218px,rgb(35, 60, 161) 218px, rgb(35, 60, 161) 220px,rgb(37, 46, 114) 220px, rgb(37, 46, 114) 222px,rgb(53, 59, 154) 222px, rgb(53, 59, 154) 224px,rgb(79, 102, 205) 224px, rgb(79, 102, 205) 226px,rgb(30, 47, 123) 226px, rgb(30, 47, 123) 228px,rgb(34, 62, 166) 228px, rgb(34, 62, 166) 230px,rgb(83, 90, 158) 230px, rgb(83, 90, 158) 232px,rgb(27, 44, 108) 232px, rgb(27, 44, 108) 234px,rgb(40, 58, 122) 234px, rgb(40, 58, 122) 236px,rgb(112, 130, 194) 236px, rgb(112, 130, 194) 238px,rgb(118, 125, 205) 238px, rgb(118, 125, 205) 240px,rgb(48, 53, 121) 240px, rgb(48, 53, 121) 242px,rgb(85, 96, 194) 242px, rgb(85, 96, 194) 244px,rgb(26, 49, 144) 244px, rgb(26, 49, 144) 246px,rgb(59, 82, 172) 246px, rgb(59, 82, 172) 248px,rgb(55, 65, 202) 248px, rgb(55, 65, 202) 250px,rgb(60, 76, 145) 250px, rgb(60, 76, 145) 252px,rgb(109, 118, 207) 252px, rgb(109, 118, 207) 254px,rgb(40, 50, 106) 254px, rgb(40, 50, 106) 256px,rgb(79, 92, 149) 256px, rgb(79, 92, 149) 258px,rgb(60, 72, 150) 258px, rgb(60, 72, 150) 260px,rgb(80, 96, 206) 260px, rgb(80, 96, 206) 262px,rgb(57, 73, 211) 262px, rgb(57, 73, 211) 264px,rgb(106, 117, 182) 264px, rgb(106, 117, 182) 266px,rgb(29, 37, 194) 266px, rgb(29, 37, 194) 268px,rgb(23, 29, 114) 268px, rgb(23, 29, 114) 270px,rgb(86, 99, 200) 270px, rgb(86, 99, 200) 272px,rgb(37, 48, 105) 272px, rgb(37, 48, 105) 274px,rgb(22, 33, 137) 274px, rgb(22, 33, 137) 276px,rgb(42, 55, 122) 276px, rgb(42, 55, 122) 278px,rgb(41, 50, 167) 278px, rgb(41, 50, 167) 280px,rgb(46, 57, 182) 280px, rgb(46, 57, 182) 282px,rgb(63, 66, 108) 282px, rgb(63, 66, 108) 284px,rgb(83, 86, 140) 284px, rgb(83, 86, 140) 286px,rgb(98, 105, 193) 286px, rgb(98, 105, 193) 288px,rgb(35, 52, 213) 288px, rgb(35, 52, 213) 290px,rgb(27, 46, 156) 290px, rgb(27, 46, 156) 292px,rgb(26, 31, 127) 292px, rgb(26, 31, 127) 294px,rgb(30, 41, 138) 294px, rgb(30, 41, 138) 296px,rgb(62, 86, 207) 296px, rgb(62, 86, 207) 298px,rgb(43, 59, 131) 298px, rgb(43, 59, 131) 300px,rgb(57, 64, 216) 300px, rgb(57, 64, 216) 302px,rgb(52, 65, 116) 302px, rgb(52, 65, 116) 304px,rgb(17, 25, 113) 304px, rgb(17, 25, 113) 306px,rgb(44, 65, 151) 306px, rgb(44, 65, 151) 308px,rgb(30, 45, 152) 308px, rgb(30, 45, 152) 310px,rgb(94, 118, 203) 310px, rgb(94, 118, 203) 312px,rgb(78, 87, 132) 312px, rgb(78, 87, 132) 314px,rgb(57, 66, 107) 314px, rgb(57, 66, 107) 316px,rgb(33, 69, 213) 316px, rgb(33, 69, 213) 318px,rgb(78, 83, 146) 318px, rgb(78, 83, 146) 320px,rgb(25, 31, 104) 320px, rgb(25, 31, 104) 322px,rgb(59, 70, 167) 322px, rgb(59, 70, 167) 324px,rgb(43, 52, 133) 324px, rgb(43, 52, 133) 326px,rgb(94, 118, 203) 326px, rgb(94, 118, 203) 328px,rgb(79, 105, 212) 328px, rgb(79, 105, 212) 330px,rgb(55, 63, 115) 330px, rgb(55, 63, 115) 332px,rgb(99, 105, 203) 332px, rgb(99, 105, 203) 334px,rgb(26, 52, 166) 334px, rgb(26, 52, 166) 336px,rgb(40, 47, 127) 336px, rgb(40, 47, 127) 338px,rgb(81, 94, 149) 338px, rgb(81, 94, 149) 340px,rgb(28, 47, 141) 340px, rgb(28, 47, 141) 342px,rgb(49, 58, 139) 342px, rgb(49, 58, 139) 344px,rgb(38, 44, 157) 344px, rgb(38, 44, 157) 346px,rgb(43, 61, 165) 346px, rgb(43, 61, 165) 348px,rgb(41, 51, 121) 348px, rgb(41, 51, 121) 350px,rgb(94, 106, 160) 350px, rgb(94, 106, 160) 352px,rgb(52, 65, 205) 352px, rgb(52, 65, 205) 354px,rgb(57, 70, 207) 354px, rgb(57, 70, 207) 356px,rgb(49, 57, 143) 356px, rgb(49, 57, 143) 358px,rgb(73, 89, 176) 358px, rgb(73, 89, 176) 360px,rgb(39, 46, 111) 360px, rgb(39, 46, 111) 362px,rgb(32, 64, 208) 362px, rgb(32, 64, 208) 364px,rgb(66, 90, 186) 364px, rgb(66, 90, 186) 366px,rgb(86, 103, 214) 366px, rgb(86, 103, 214) 368px,rgb(23, 28, 110) 368px, rgb(23, 28, 110) 370px,rgb(42, 49, 116) 370px, rgb(42, 49, 116) 372px,rgb(122, 126, 205) 372px, rgb(122, 126, 205) 374px,rgb(78, 97, 203) 374px, rgb(78, 97, 203) 376px,rgb(46, 52, 120) 376px, rgb(46, 52, 120) 378px,rgb(67, 89, 185) 378px, rgb(67, 89, 185) 380px,rgb(36, 43, 175) 380px, rgb(36, 43, 175) 382px,rgb(38, 59, 146) 382px, rgb(38, 59, 146) 384px,rgb(49, 53, 103) 384px, rgb(49, 53, 103) 386px,rgb(109, 122, 209) 386px, rgb(109, 122, 209) 388px,rgb(86, 107, 200) 388px, rgb(86, 107, 200) 390px,rgb(57, 68, 109) 390px, rgb(57, 68, 109) 392px,rgb(76, 95, 165) 392px, rgb(76, 95, 165) 394px,rgb(80, 83, 135) 394px, rgb(80, 83, 135) 396px,rgb(43, 64, 143) 396px, rgb(43, 64, 143) 398px,rgb(105, 110, 202) 398px, rgb(105, 110, 202) 400px,rgb(77, 88, 189) 400px, rgb(77, 88, 189) 402px,rgb(79, 91, 182) 402px, rgb(79, 91, 182) 404px);
+}
+
+.bg-tainted-pattern{
+    background-image: radial-gradient(circle 7px at 65% 42%, rgb(56,56,56) 0%, rgb(56,56,56) 50%,transparent 50%, transparent 100%),radial-gradient(circle 7px at 18% 54%, rgb(56,56,56) 0%, rgb(56,56,56) 50%,transparent 50%, transparent 100%),radial-gradient(circle 7px at 69% 14%, rgb(56,56,56) 0%, rgb(56,56,56) 50%,transparent 50%, transparent 100%),radial-gradient(circle 7px at 0% 63%, rgb(56,56,56) 0%, rgb(56,56,56) 50%,transparent 50%, transparent 100%),radial-gradient(circle 7px at 41% 87%, rgb(56,56,56) 0%, rgb(56,56,56) 50%,transparent 50%, transparent 100%),radial-gradient(circle 5px at 81% 77%, rgb(56,56,56) 0%, rgb(56,56,56) 50%,transparent 50%, transparent 100%),radial-gradient(circle 5px at 97% 65%, rgb(56,56,56) 0%, rgb(56,56,56) 50%,transparent 50%, transparent 100%),radial-gradient(circle 5px at 78% 54%, rgb(56,56,56) 0%, rgb(56,56,56) 50%,transparent 50%, transparent 100%),radial-gradient(circle 5px at 99% 20%, rgb(56,56,56) 0%, rgb(56,56,56) 50%,transparent 50%, transparent 100%),radial-gradient(circle 5px at 13% 74%, rgb(56,56,56) 0%, rgb(56,56,56) 50%,transparent 50%, transparent 100%),radial-gradient(circle 12px at 71% 11%, rgb(43,43,43) 0%, rgb(43,43,43) 50%,transparent 50%, transparent 100%),radial-gradient(circle 12px at 86% 30%, rgb(43,43,43) 0%, rgb(43,43,43) 50%,transparent 50%, transparent 100%),radial-gradient(circle 12px at 56% 50%, rgb(43,43,43) 0%, rgb(43,43,43) 50%,transparent 50%, transparent 100%),radial-gradient(circle at center right, rgb(35,35,35) 0%, rgb(35,35,35) 10%,transparent 10%, transparent 90%),linear-gradient(90deg, rgb(47, 113, 183),rgb(136, 79, 213));
+}
+
+
+/* Image Backgrounds */
+
+.bg{
+    transition: all 0.3s ease-in-out;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: contain; */
+}
+.bg-1{
+    background-image: url('/images/bg-1.jpg');
+}
+.bg-2{
+    background-image: url('/images/bg-2.jpg');
+}
+.bg-3{
+    background-image: url('/images/bg-3.jpg');
+}
+
+
+
+
+
+
+
+
+/* Glassmorphism */
+
+.bg-glassmorphism-2{
+    background: rgba( 107, 3, 198, 0.65 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+
+.bg-gm{
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.bg-gm-yellow{
+    background: rgba( 248, 231, 28, 0.4 );
+}
+.bg-gm-red{
+    background: rgba( 208, 2, 27, 0.4 );
+}
+.bg-gm-orange{
+    background: rgba( 245, 166, 35, 0.25 );
+}
+.bg-gm-blue{
+    background: rgba( 74, 144, 226, 0.4 );
+}
+.bg-gm-purple{
+    background: rgba( 144, 19, 254, 0.4 );
+}
+.bg-gm-green{
+    background: rgba( 144, 19, 254, 0.4 );
+}
+.bg-gm-gray{
+    background: rgba( 74, 74, 74, 0.25 );
+}
+.bg-gm-black{
+    background: rgba( 0, 0, 0, 0.25 );
+}
+

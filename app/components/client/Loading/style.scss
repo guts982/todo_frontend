@@ -1,0 +1,94 @@
+
+/* Loading Animation */
+
+  
+  :root {
+    --hue: 18;
+    --bg: hsl(var(--hue), 90%, 90%);
+    --fg: hsl(var(--hue), 90%, 10%);
+    --primary: hsl(var(--hue), 90%, 50%);
+    --trans-dur: 0.1s;
+  }
+  
+
+  
+  .pl {
+
+    z-index: 9!important;
+    $dur: 2s;
+    margin: auto;
+    width:20rem; // 8em;
+    height:20rem; // 8em;
+  
+    &__line,
+    &__line-g,
+    &__lines {
+      animation: lineRotate $dur ease-in-out infinite;
+    }
+  
+    &__line {
+      animation-name: lineMove;
+      animation-timing-function: ease-in;
+    }
+  
+    &__line-g {
+      animation-name: lineFade;
+      animation-timing-function: linear;
+    }
+  
+    @for $l from 2 through 12 {
+      &__line-g:nth-child(#{$l}),
+      &__line-g:nth-child(#{$l}) &__line {
+        animation-delay: ($dur / 2) / 12 * $l;
+      }
+    }
+  
+    &__lines {
+      transform-origin: 64px 64px;
+    }
+  
+    &__layer &__lines {
+      stroke: hsl(48, 90%, 50%);
+    }
+  
+    &__layer + &__layer &__lines {
+      stroke: hsl(18, 90%, 50%);
+    }
+  }
+  
+  /* Dark theme */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: hsl(var(--hue), 90%, 10%);
+      --fg: hsl(var(--hue), 90%, 90%);
+    }
+  }
+  
+  /* Animations */
+  @keyframes lineRotate {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(0.5turn);
+    }
+  }
+  
+  @keyframes lineFade {
+    from, 50%, to {
+      opacity: 0;
+    }
+    10%, 45% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes lineMove {
+    from {
+      stroke-dashoffset: -32;
+    }
+    50%, to {
+      stroke-dashoffset: 32;
+    }
+  }
+  
