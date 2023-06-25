@@ -9,7 +9,8 @@ import { setApiProgress } from '../globalSlice';
 
 
 // const baseUrl = "https://todoapi.amitkarn.com.np/api/";
-const baseUrl = "http://127.0.0.1:4000/api/";
+// const baseUrl = "http://127.0.0.1:4000/api/";
+const baseUrl = process.env.API_URL
 
 //Define a service using a base URL and expected endpoints
 export const todosApi = createApi({

@@ -70,6 +70,8 @@ const ListTodos = forwardRef<HTMLDivElement, any>(({}, ref) => {
   );
 });
 
+ListTodos.displayName = "ListTodos";
+
 const SingleTodo = ({
   todo,
   parent,

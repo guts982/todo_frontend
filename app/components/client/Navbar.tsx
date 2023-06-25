@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 
 import { usePathname } from "next/navigation";
 
@@ -10,7 +11,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center w-full">
         <div className="flex justify-center items-center">
           TodoApp
-          <img src="/images/logo.png" alt="Logo" className="w-8 ml-2 h-8" />
+          <Image src="/images/logo.png" alt="Logo" className="w-8 ml-2 h-8" />
         </div>
         <div className="flex justify-even items-center gap-3">
           <Link
