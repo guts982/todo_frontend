@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center w-full">
         <div className="flex justify-center items-center">
           TodoApp
-          <Image src="/images/logo.png" alt="Logo" className="w-8 ml-2 h-8" />
+          <Image src="/images/logo.png" alt="Logo" className="w-8 ml-2 h-8" width={8} height={8} />
         </div>
         <div className="flex justify-even items-center gap-3">
           <Link
