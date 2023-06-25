@@ -35,6 +35,7 @@ const Advanced = () => {
 
   return (
     <div className="flex flex-col justify-center items-center ">
+      <div className="bg-white ">{process.env.NEXT_PUBLIC_API_URL}</div>
       {globalLoading && <Loading />}
 
       <ListTodos ref={listRef} />
